@@ -1,5 +1,12 @@
 ![](https://mstrobel.github.io/procyon/procyon.png)
 
+Just edited a few classes to work on Android.
+
+NOTES: Now you need to specify DecompilerSettings.RT_JAR explicitly before calling the decompiler.
+Release(s) are available at [here](https://github.com/MikeAndrson/procyon/releases).
+
+### Procyon
+
 *Procyon* is a suite of Java metaprogramming tools focused on code generation and analysis.  It includes the following libraries:
 
   1. Core Framework
