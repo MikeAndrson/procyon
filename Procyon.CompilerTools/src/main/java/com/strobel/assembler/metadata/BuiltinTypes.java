@@ -16,6 +16,7 @@
 
 package com.strobel.assembler.metadata;
 
+import com.strobel.decompiler.DecompilerSettings;
 import com.strobel.util.ContractUtils;
 
 /**
@@ -50,7 +51,7 @@ public final class BuiltinTypes {
         Null = NullType.INSTANCE;
 
         final Buffer buffer = new Buffer();
-        final ITypeLoader typeLoader = new ClasspathTypeLoader();
+        ITypeLoader typeLoader = new JarTypeLoader(DecompilerSettings.RT_JAR);
 
         if (!typeLoader.tryLoadType("java/lang/Object", buffer)) {
             throw Error.couldNotLoadObjectType();
