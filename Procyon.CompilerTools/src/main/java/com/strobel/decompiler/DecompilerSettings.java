@@ -22,7 +22,11 @@ import com.strobel.decompiler.languages.Language;
 import com.strobel.decompiler.languages.Languages;
 import com.strobel.decompiler.languages.java.JavaFormattingOptions;
 
+import java.util.jar.JarFile;
+
 public class DecompilerSettings {
+    public static JarFile RT_JAR = null;
+    
     private ITypeLoader _typeLoader;
     private boolean _includeLineNumbersInBytecode = true;
     private boolean _showSyntheticMembers;
