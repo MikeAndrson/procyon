@@ -1,11 +1,15 @@
-![](https://mstrobel.github.io/procyon/procyon.png)
+# Procyon Android port
 
 Just edited a few classes to work on Android.
 
-NOTES: Now you need to specify DecompilerSettings.RT_JAR explicitly before calling the decompiler.
-Release(s) are available at [here](https://github.com/MikeAndrson/procyon/releases).
+**NOTES**: Now you need to specify `DecompilerSettings.RT_JAR` explicitly before calling the decompiler for Procyon to resolve `java.lang.Class` and `java.lang.Object`.
+Also Android doesn't have `javax.lang.model` package which Procyon uses, so you need to add that to your app as well. I added it [here](https://github.com/MikeAndrson/procyon/blob/develop/javax-model.jar) to save you from that trouble :)
 
-### Procyon
+Oh and also, release(s) are available [here](https://github.com/MikeAndrson/procyon/releases).
+
+---
+
+![](https://mstrobel.github.io/procyon/procyon.png)
 
 *Procyon* is a suite of Java metaprogramming tools focused on code generation and analysis.  It includes the following libraries:
 
